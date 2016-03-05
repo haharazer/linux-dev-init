@@ -6,7 +6,6 @@ apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-
 ##安装vim
 ```
 apt-get install vim
@@ -25,6 +24,7 @@ add-apt-repository ppa:ondrej/php5-5.6
 apt-get update
 apt-get install nginx -y //安装Nginx服务器
 apt-get install php5 -y //安装php5
+apt-get install mysql-server
 ```
 
 ##安装composer
@@ -39,4 +39,11 @@ composer config -g repo.packagist composer http://packagist.phpcomposer.com
 cd ~ && mkdir -p config && cd config
 ln -s /etc/php5/fpm/php.ini ./php.ini
 ln -s /etc/nginx/sites-available/default ./nginx-server.conf
+ln -s /etc/php5/fpm/php-fpm.conf ./php-fpm.conf
+```
+
+##启动服务
+```
+service php5-fpm start
+service mysql start
 ```
