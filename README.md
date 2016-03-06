@@ -24,7 +24,7 @@ add-apt-repository ppa:ondrej/php5-5.6
 apt-get update
 apt-get install nginx -y //安装Nginx服务器
 apt-get install php5 -y //安装php5
-apt-get install mysql-server -y
+apt-get install mysql-server-5.6 -y
 ```
 
 ##安装composer
